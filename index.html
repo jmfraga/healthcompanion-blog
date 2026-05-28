@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog · Health Companion</title>
+  <meta name="description" content="Artículos sobre bienestar personal, hábitos sostenibles y autocuidado. Health Companion — wellness en tu bolsillo.">
+  <link rel="canonical" href="https://blog.healthcompanion.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Health Companion">
+  <meta property="og:title" content="Blog · Health Companion">
+  <meta property="og:description" content="Bienestar personal y hábitos sostenibles.">
+  <meta property="og:url" content="https://blog.healthcompanion.app/">
+  <meta property="og:image" content="https://blog.healthcompanion.app/assets/og/default.jpg">
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/healthcompanion-simbolo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,400..700,1&family=Geist:wght@400..600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --hc-ink: #0c2a2a;
+      --hc-aqua: #2dd4bf;
+      --hc-cream: #f4ede1;
+      --hc-ink-soft: #335555;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--hc-cream);
+      color: var(--hc-ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+    }
+    a { color: var(--hc-ink); text-decoration: none; transition: color .2s ease; }
+    a:hover { color: var(--hc-aqua); }
+    header {
+      padding: 28px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header .brand { display: flex; align-items: center; gap: 12px; }
+    header .brand img { height: 28px; width: auto; }
+    header .brand span { font-family: "Fraunces", Georgia, serif; font-style: italic; font-size: 18px; }
+    header nav { display: flex; gap: 24px; font-size: 14px; font-weight: 500; }
+    .hero {
+      max-width: 720px;
+      margin: 60px auto 40px;
+      padding: 0 24px;
+      text-align: center;
+    }
+    .hero p.eyebrow {
+      font-family: "Geist", sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--hc-ink-soft);
+      margin: 0 0 16px;
+    }
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 56px);
+      margin: 0 0 16px;
+    }
+    .hero h1 em {
+      color: var(--hc-aqua);
+      font-style: italic;
+    }
+    .hero p.sub {
+      font-size: 17px;
+      color: var(--hc-ink-soft);
+      margin: 0;
+    }
+    main {
+      max-width: 1100px;
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 28px;
+    }
+    .post-card {
+      background: #fff;
+      border: 1px solid rgba(12, 42, 42, 0.08);
+      border-radius: 14px;
+      padding: 22px;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .post-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(12, 42, 42, 0.08);
+    }
+    .post-card h2 {
+      font-size: 22px;
+      margin: 0 0 10px;
+    }
+    .post-card .meta {
+      font-size: 12px;
+      color: var(--hc-ink-soft);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    .post-card p {
+      font-size: 15px;
+      color: var(--hc-ink-soft);
+      margin: 0;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 80px 24px;
+      color: var(--hc-ink-soft);
+    }
+    .empty-state p {
+      font-size: 15px;
+      margin: 0;
+    }
+    footer {
+      border-top: 1px solid rgba(12, 42, 42, 0.08);
+      padding: 32px 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-between;
+      font-size: 13px;
+      color: var(--hc-ink-soft);
+    }
+    footer a { color: var(--hc-ink-soft); }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" class="brand">
+      <img src="/assets/logos/healthcompanion-mixta-color.png" alt="Health Companion">
+    </a>
+    <nav>
+      <a href="https://app.healthcompanion.app">Abrir app</a>
+      <a href="https://healthcompanion.app">healthcompanion.app</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Diario de bienestar</p>
+    <h1>Cuidándote, <em>siempre</em>.</h1>
+    <p class="sub">Notas sobre hábitos sostenibles, conversaciones con tu médico, y lo que sí sabemos sobre cuidarse el cuerpo y la mente.</p>
+  </section>
+
+  <main>
+    <div class="empty-state">
+      <p>Pronto publicaremos el primer artículo. Mientras tanto, conoce la app en <a href="https://app.healthcompanion.app">app.healthcompanion.app</a>.</p>
+    </div>
+    <!-- TODO Marketing Studio: el grid de artículos se llena commit a commit desde posts/. -->
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> Health Companion</p>
+    <p>
+      <a href="https://healthcompanion.app">healthcompanion.app</a> ·
+      Wellness app · No es dispositivo médico
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
